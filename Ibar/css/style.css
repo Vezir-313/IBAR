@@ -1,0 +1,780 @@
+ /*===============     start    hedaer    style   start     =================  */
+#header{
+	width: 100%;
+	transition: all .5s ease;
+}
+
+#header .wrap{
+	/*margin-top: 40px;*/
+}
+
+#header .wrap .logo{
+	width: 195px;
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+#header .wrap .access div{
+	color: #fff;
+	font-size: 1.6em;
+	padding: 7px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+#header .wrap .access div:hover{
+	background-color: rgba(255, 255, 255, .15);
+}
+
+#header .wrap .nav{
+	
+}
+#header .wrap .nav .menubarIcon{
+	display: none;
+}
+#header .wrap .nav ul{
+	font-size: 14px;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 0px;
+}
+
+#header .wrap .nav ul li{
+	/*display: inline;*/
+	padding: 10px 13px;
+}
+
+
+#header .wrap .nav ul li {
+	color: #fff;
+}
+
+#header .wrap .nav ul li span{
+	cursor: pointer;
+}
+
+#header .wrap .nav ul li:nth-child(1){
+	text-decoration: underline;
+}
+
+#header .wrap .nav ul li:nth-child(2){
+	text-decoration: underline;
+}
+
+#header .wrap .nav ul li:nth-child(3){
+	padding-right: 7px;
+}
+
+#header .wrap .nav ul li:nth-child(4){
+	padding-right:  5px;
+	padding-left:  5px;
+}
+
+#header .wrap .nav ul li:nth-child(5){
+	padding-left: 0px;
+}
+
+#header .wrap .nav ul li:nth-child(6){
+	border-radius: 50px;
+	border: 2px solid rgba(255, 255, 255, .15);
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+#header .wrap .nav ul li:nth-child(6):hover{
+	background-color: rgba(255, 255, 255, .15);
+}
+
+#header .wrap .nav ul li:last-child{
+	display: none;
+}
+
+#header .wrap .nav ul li:last-child div{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 100%;
+	border: 1px solid #99ACD3;
+	cursor: pointer;	
+}
+
+#header .wrap .nav ul li:last-child div:hover{
+	background-color: rgba(255, 255, 255, .15);
+}
+
+#header .wrap .nav ul li:last-child div i{
+	line-height: 40px;
+	color: #99ACD3;
+	font-size: 20px;
+}
+/* ===============     stop    hedaer    style   stop    =================  */
+
+/*====================================================================================================================*/
+
+
+/* ===============     start    content     style   start     =================  */
+#content{
+	width: 100%;
+	margin-top: 100px;
+}
+#content .wrap .mainContent {
+	/*display: none;*/
+	position: relative;
+	width: 625px;
+	margin: 0 auto;
+	height: 256px;
+}
+	    /*  === start search start ====  */
+#content .wrap .mainContent .search{
+	width: calc(100% - 20px);
+	height: 50px;
+	border-bottom: 2px solid rgba(255, 255, 255, .25);
+	cursor: text;
+}
+#content .wrap .mainContent .search span{
+	color: #fff;
+	font-size: 2.3em;
+	position: relative;
+	/*float: left;*/
+}	
+#content .wrap .mainContent .search input{
+	width: calc(100% - 80px);
+	height: 50%;
+	background: none;
+	border: none;
+	font-size: 2.6em;
+	color: #fff; 
+	font-weight: 100;
+	float: left;
+	display: none;
+	position: relative;
+}
+#content .wrap .mainContent .search .searchIcon{
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 35px;
+	float: right;
+}
+#content .wrap .mainContent .search .menubarIcon{
+	background-image: url(../img/menu.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 35px;
+	float: right;
+	cursor: pointer;
+}
+#content .wrap .mainContent .search input:focus{
+	outline: none;
+}	
+
+	  /*  === stop search stop ====  */
+
+
+	  /*  === start example start ====  */
+#content .wrap .mainContent .example{
+	width: 100%;
+	display: none;
+}
+#content .wrap .mainContent .example ul{
+	list-style: none;
+	padding: 0;
+}
+#content .wrap .mainContent .example ul li{
+	color: #fff;
+	display: inline;
+	padding: 5px 10px;
+	border-radius: 60px;
+	background: rgba(255, 255, 255, .15);
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 900;
+}
+#content .wrap .mainContent .example ul li:first-child{
+	padding: 0;
+	background: none;
+	cursor: default;
+}	
+  	  /*  === stop example stop ====  */
+
+
+
+  	  /*  === start mainSlider start ====  */
+#content .wrap .mainContent .mainSlider{
+	width: 100%;
+	height: 180px;
+	margin-top: 20px;
+}
+#content .wrap .mainContent .mainSlider .slider{
+	position: relative;
+	width: calc(70% - 40px);
+	height: 100%;
+	float: left;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+#content .wrap .mainContent .mainSlider .slider .sliderText{
+	color: #fff;
+	position: absolute;
+	left: 20px;
+	font-weight: 600;
+	opacity: 1;
+	display: none;
+}
+#content .wrap .mainContent .mainSlider .slider .sliderText p{
+	margin-top: -10px;
+}	
+#content .wrap .mainContent .mainSlider .slider img{
+	opacity: .5;
+	cursor: pointer;
+	height: 100%;
+	position: relative;
+}
+#content .wrap .mainContent .mainSlider .slider .btns{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	display: flex;
+	align-items: center;
+
+}
+#content .wrap .mainContent .mainSlider .slider .btns div{
+	width: 5px;
+	height: 5px;
+	background: #fff;
+	border-radius: 100%;
+	margin-left: 5px;
+	border: 2px solid white;
+	cursor: pointer;	
+}
+#content .wrap .mainContent .mainSlider .slider .btns div:first-child{
+	width: 10px;
+	height: 10px;
+	background: none; 
+}	
+#content .wrap .mainContent .mainSlider .odenis{
+	position: relative;
+	width: 30%;
+	height: 100%;
+	float: right;
+	cursor: pointer;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+#content .wrap .mainContent .mainSlider .odenis:hover{
+	transform: scale(1.02);	
+}	
+#content .wrap .mainContent .mainSlider .odenis .odenisHead{
+	color: #fff;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 600;
+	margin-top: 20px;
+}	
+#content .wrap .mainContent .mainSlider .odenis .odenisLink{
+	position: relative;
+	top: calc(100% - 80px);
+	left: 30px;
+}
+#content .wrap .mainContent .mainSlider .odenis .odenisLink a{
+	color: #fff;
+	font-weight: 600;
+	font-size: .8em;
+	text-decoration: underline;
+}	
+#content .wrap .mainContent .mainSlider .odenis .odenisFoto{
+	position: relative;
+	background-image: url(../img/odenis.png);
+	background-size: cover;
+	left: calc(100% - 95px);
+	top: calc(100% - 150px);
+	width: 90px;
+	height: 90px;
+}	
+
+  	  /*  === stop mainSlider stop ====  */
+
+
+
+/* ===============     stop    content     style   stop    =================  */
+
+/*====================================================================================================================*/
+
+/*==================             start  footer style start         ===========================   */
+#footer{
+	width: 100%;
+	margin-top: 130px;
+	color: #fff;
+}
+
+#footer .wrap .menu{
+	
+}
+#footer .wrap .menu .nav{
+	
+}
+#footer .wrap .menu .nav ul{
+	padding: 0;
+	list-style: none;
+}
+#footer .wrap .menu .nav ul li{
+	display: inline;
+	padding: 5px 15px;
+}
+#footer .wrap .menu .nav ul li:first-child{
+	padding-left: 0px;
+}
+#footer .wrap .menu .nav ul li a{
+	text-decoration: underline;
+	color: #fff;
+	font-weight: 600;
+	opacity: .6;
+}
+#footer .wrap .menu .nav ul li a:hover{
+	text-decoration: none;
+}
+
+
+#footer .wrap .menu .created{
+	opacity: .6;
+	font-size: .9em;
+}
+#footer .wrap .menu .created p{
+	display: inline;
+}
+#footer .wrap .menu .created div{
+	position: relative;
+	top: 0px;
+	display: inline;
+	margin-left: 15px;
+}
+#footer .wrap .menu .created div img{
+	position: relative;
+	top: 3px;
+	margin-left: 5px;
+	width: 13px;
+	height: 12px;
+}
+#footer .wrap .menu .created div span{
+	position: relative;
+	top: 3px;
+	left: 5px;
+	font-size: 14px;
+}
+#footer .wrap .menu .created div a{
+	color: #fff;
+}
+/*#footer .wrap .menu .created div a:hover{
+	text-decoration: underline;                  //java scriptle edecem
+}*/
+
+
+#footer .wrap .sponsor{
+	display: flex;
+	opacity: .6;
+	margin-left: 15px;
+	align-items: center;
+}
+#footer .wrap .sponsor div{
+	width: 55px;
+	margin-left: 25px;
+}
+
+#footer .wrap .contact {
+	width: 270px;
+}
+#footer .wrap .contact .sosial{
+	width: 150px;
+}
+#footer .wrap .contact .sosial .lang{
+	margin-top: 20px;
+}
+#footer .wrap .contact .sosial .lang a{
+	color: #fff;
+	text-decoration: underline;
+	opacity: .6;
+}
+#footer .wrap .contact .sosial .lang a:hover{
+	text-decoration: none;
+}
+
+#footer .wrap .contact .sosial .sosialIcon{
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+#footer .wrap .contact .sosial .sosialIcon a{
+	width: calc((100% / 5) - 5px);
+	height: 15px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: .4;
+}
+#footer .wrap .contact .sosial .sosialIcon a:nth-child(1){
+	background-image: url(../img/sosial1.png);
+}
+#footer .wrap .contact .sosial .sosialIcon a:nth-child(2){
+	background-image: url(../img/sosial2.png);
+}
+#footer .wrap .contact .sosial .sosialIcon a:nth-child(3){
+	background-image: url(../img/sosial3.png);
+}
+#footer .wrap .contact .sosial .sosialIcon a:nth-child(4){
+	background-image: url(../img/sosial4.svg);
+}
+#footer .wrap .contact .sosial .sosialIcon a:nth-child(5){
+	background-image: url(../img/sosial5.png);
+}
+
+
+#footer .wrap .contact  .call{
+	width: 45px;
+	height: 50px;
+	background-image: url(../img/call.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: .4;
+	margin-left: 20px;
+	margin-top: -15px;
+	cursor: pointer;
+}
+
+/*==================             stop  footer style stop         ===========================   */
+
+/*====================================================================================================*/
+
+
+ /*================       start   min width 1145px         max Width 1245px   start    =================   */
+@media (min-width: 1146px) and (max-width: 1245px) {
+			/*start header */
+#header .wrap .access div{
+	padding: 7px 15px;
+}
+
+#header .wrap .nav ul li:nth-child(6){
+	display: none;
+}
+
+#header .wrap .nav ul{
+	margin-top: 10px;
+}
+
+#header .wrap .nav ul li:last-child{
+	display: block;
+	margin-top: -15px;
+	padding-left: 5px;
+}
+
+#header .wrap .nav ul li{
+	padding-top: 0px;
+}
+		   /*stop header*/
+/*=================================================================================*/
+#footer{
+	/*margin-top: 100px;*/
+	padding-bottom: 20px;
+}
+#footer .wrap .sponsor{
+	display: none;
+}
+
+
+}
+   /*================       stop  min width 1145px         max Width 1245px      stop  =================   */
+
+
+
+
+
+ /*================   start   min Width 1100px         max Width 1145px  start  =================   */
+@media (min-width: 1100px) and (max-width: 1145px) {
+
+
+
+			/*start header */
+
+#header .wrap .access div{
+	font-size: 1.4em;
+	padding: 7px 10px;
+}
+#header .wrap .nav ul li:nth-child(6){
+	display: none;
+}
+#header .wrap .nav ul{
+	margin-top: 0px;
+}
+#header .wrap .nav ul li:last-child{
+	display: block;
+	margin-top: -15px;
+	padding-left: 5px;
+}
+		   /*stop header*/
+/*=========================================================================*/
+#footer{
+	/*margin-top: 90px;*/
+}
+#footer .wrap .sponsor{
+	display: none;
+}
+
+}/*================     stop    min width 1100px     max Width 1145px  stop=================   */
+
+
+
+    /*================   start   min Width 1000px         max Width 1100px  start  =================   */
+@media (min-width: 1000px) and (max-width: 1100px) {
+
+
+
+
+			/*start header */
+#header .wrap .access div{
+	font-size: 1.2em;
+	padding: 7px 8px;
+}
+
+#header .wrap .logo{
+	width: 165px;
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+#header .wrap .nav ul li:nth-child(6){
+	display: none;
+}
+
+#header .wrap .nav ul {
+	margin-top: 0px;
+}
+
+#header .wrap .nav ul li:last-child{
+	display: block;
+	margin-top: -12px;
+	padding-left: 5px;
+}
+
+		   /*stop header*/
+#footer .wrap .sponsor{
+	display: none;
+}
+
+}
+
+   /*================   stop      min width 1000px     max Width 1100px   stop  =================   */
+
+
+
+
+   /*================   start      min width 480px     max Width 1000px   start  =================   */
+@media (min-width: 480px) and (max-width: 1000px) {
+
+	/*start header */
+.wrap{
+	width: calc(100% - 50px);
+}
+#header .wrap{
+	position: relative;
+}
+#header .wrap .nav .menubarIcon{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #fff;
+	cursor: pointer;
+}	
+#header .wrap .nav ul li{
+	display: none;
+}	
+
+#header .wrap .nav ul li:last-child{
+	display: block;
+	position: absolute;
+	left: 0px;
+	margin: 0;
+	padding:0; 
+}
+
+#header .wrap .logo{
+	width: 155px;
+	cursor: pointer;
+	position: absolute;
+	left: calc(50% - 77px);
+}	
+
+
+#header .wrap .access div{
+	display: none;
+}
+	/*stop  header stop*/
+
+/*================================================================================*/
+
+	/*start  content start*/
+#content .wrap .mainContent {
+	width: 100%;
+}
+#content .wrap .mainContent .search{
+	height: 30px;
+}
+#content .wrap .mainContent .search span{
+	font-size: 1.3em;
+	top: -10px;
+}	
+#content .wrap .mainContent .search input{
+	top: -10px;
+}
+#content .wrap .mainContent .search .menubarIcon{
+	display: none;
+}
+#content .wrap .mainContent .search .searchIcon{
+	width: 30px;
+	height: 30px;
+	margin-top: -10px;
+}
+
+	/*stop  content stop*/	
+
+/*====================================================================================================*/
+
+#footer .wrap .contact, #footer .wrap .sponsor,#footer .wrap .menu .nav{
+	display: none;
+}
+#footer .wrap .menu .created div{
+	display: none;
+}
+#footer .wrap .menu .created{
+	margin-top: 70px;
+}
+
+
+
+}      /*================   stop      min width 480px     max Width 1000px   stop  =================   */
+
+
+
+
+   /*================   start      max width 480px    start  =================   */
+@media (max-width: 480px) {
+.wrap{
+	width: calc(100% - 20px);
+}
+
+	/*start header */
+#header .wrap{
+	width: calc(100% - 20px);
+	position: relative;
+}
+#header .wrap .nav .menubarIcon{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #fff;
+	cursor: pointer;
+}	
+#header .wrap .nav ul li{
+	display: none;
+}	
+
+#header .wrap .nav ul li:last-child{
+	display: block;
+	position: absolute;
+	left: 0px;
+	margin: 0;
+	padding:0; 
+
+}
+
+#header .wrap .logo{
+	width: 155px;
+	cursor: pointer;
+	position: absolute;
+	left: calc(50% - 77px);
+}	
+
+
+#header .wrap .access div{
+	display: none;
+}
+	/*stop header*/
+
+/*================================================	*/
+
+	/*start  content */
+#content .wrap .mainContent {
+	width: 100%;
+}
+#content .wrap .mainContent .search span{
+	font-size: 1.1em;
+}
+#content .wrap .mainContent .mainSlider{
+	width: 100%;
+}	
+#content .wrap .mainContent .search{
+	height: 25px;
+}
+#content .wrap .mainContent .mainSlider .odenis{
+	display: none;
+}
+#content .wrap .mainContent .search input{
+	top: -10px;
+}	
+#content .wrap .mainContent .mainSlider .slider{
+	width: 100%;
+}
+#content .wrap .mainContent .search .menubarIcon{
+	display: none;
+}
+#content .wrap .mainContent .search .searchIcon{
+	width: 26px;
+	height: 27px;
+	margin-top: -10px;
+}
+	/*stop content */
+/*====================================================================================*/
+#footer{
+	margin-top: 100px;
+}
+#footer .wrap .contact, #footer .wrap .sponsor,#footer .wrap .menu .nav{
+	display: none;
+}
+#footer .wrap .menu .created div{
+	display: none;
+}
+#footer .wrap .menu .created{
+	margin-top: 70px;
+}
+
+
+}    /*================   stop      max width 480px  stop  =================   */
+
+
+
+
+
+   /*================  xususi hall(content) start  max 560px  start  =================   */
+@media (max-width: 560px){
+#content .wrap .mainContent .mainSlider .odenis{
+	display: none;
+}	
+#content .wrap .mainContent .mainSlider .slider{
+	width: 100%;
+}
+#content .wrap .mainContent .search .menubarIcon{
+	display: none;
+}
+#content .wrap .mainContent .search .searchIcon{
+	margin-top: -10px;
+}
+
+}    /*================   xususi hall(content) stop    max 560px  stop =================   

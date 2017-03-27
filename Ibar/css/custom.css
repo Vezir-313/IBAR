@@ -1,0 +1,122 @@
+/**{
+	transition: all .1s ease;
+}*/
+*{
+	transition: all .2s ease;
+	-webkit-transition: all 1s ease .15s;
+}
+a{
+	cursor: pointer;
+}
+html,body{
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+    font-family: Myfont;
+    src: url(../fonts/l-webfont.woff2);
+    src: url(../fonts/t-webfont.woff2);
+}
+
+body{
+	/*margin: 40px;*/
+	/*z-index: -4;*/
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: #2e56a6;
+	/*background-image: url(../img/glow.png);*/
+	/*background-position: bottom center;*/
+	/*background-size: 90% 90%;*/
+	/*background-repeat: no-repeat;*/
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	font-family: 'Myfont' , arial, sans-serif;
+	vertical-align: baseline;
+}
+#bodyContent{
+	padding-top: 40px;
+	padding-bottom: 100px;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/glow.png);
+	background-position: bottom center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	font-family: 'Myfont' , arial, sans-serif;
+	vertical-align: baseline;
+	z-index: -5;
+}
+
+.wrap{
+	width: calc(100% - 100px);
+	margin: 0 auto;
+	/*background-image: url(../img/glow.png);*/
+	/*background-repeat: no-repeat;*/
+	/*background-repeat: no-repeat;*/
+	/*zoom:100%;*/
+}
+
+.col1{
+	width: 8.3333%
+}
+.col2{
+	width:16.6666%;
+}
+.col3{
+	width:24.9999%;
+}
+.col4{
+	width:33.3332%;
+}
+.col5{
+	width:41.6665%;
+}
+.col6{
+	width:49.9998%;
+}
+.col7{
+	width:58.3331%;
+}
+.col8{
+	width:66.6664%;
+}
+.col9{
+	width:74.9997%;
+}
+.col10{
+	width:83.333%;
+}
+.col11{
+	width:91.6663%;
+}
+.col12{
+	width:100%;
+}
+
+img{
+	width:100%;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.cl {
+	clear: both;
+}
+
+[class*='col']{
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
